@@ -766,7 +766,7 @@
   <project name="device/qcom/sepolicy_vndr" remote="caf-vendor"/>
   <project name="device/qcom/vendor-common" remote="caf-vendor"/>
   <project name="kernel/build" path="device/qcom/kernelscripts" remote="caf-vendor"/>
-  <project name="kernel/msm-5.4" remote="caf-vendor"/>
+  <project name="kernel/msm-4.19" remote="caf-vendor"/>
   <project name="platform/hardware/qcom/audio" path="vendor/qcom/opensource/audio-hal/primary-hal" remote="caf-vendor"/>
   <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl" remote="caf-vendor"/>
   <project name="platform/hardware/qcom/display" path="hardware/qcom/display" remote="caf-vendor">
@@ -790,18 +790,18 @@
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/nfc-vendor-product.mk" src="nfc_vendor_product.mk"/>
   </project>
   <project name="platform/vendor/nxp/opensource/hidlimpl" path="vendor/nxp/opensource/hidlimpl" remote="caf-vendor"/>
-  <project name="platform/vendor/opensource/audio-kernel" path="kernel/msm-5.4/techpack/audio" remote="caf-vendor"/>
-  <project name="platform/vendor/opensource/camera-kernel" path="kernel/msm-5.4/techpack/camera" remote="caf-vendor"/>
-  <project name="platform/vendor/opensource/dataipa" path="kernel/msm-5.4/techpack/dataipa" remote="caf-vendor"/>
-  <project name="platform/vendor/opensource/display-drivers" path="kernel/msm-5.4/techpack/display" remote="caf-vendor"/>
-  <project name="platform/vendor/opensource/video-driver" path="kernel/msm-5.4/techpack/video" remote="caf-vendor"/>
+  <project name="platform/vendor/opensource/audio-kernel" path="vendor/qcom/opensource/audio-kernel" remote="caf-vendor"/>
+  <project name="platform/vendor/opensource/camera-kernel" path="kernel/msm-4.19/techpack/camera" remote="caf-vendor"/>
+  <project name="platform/vendor/opensource/display-drivers" path="kernel/msm-4.19/techpack/display" remote="caf-vendor"/>
+  <project name="platform/vendor/opensource/video-driver" path="kernel/msm-4.19/techpack/video" remote="caf-vendor"/>
   <project name="platform/vendor/qcom-opensource/audio-hal/st-hal" path="vendor/qcom/opensource/audio-hal/st-hal" remote="caf-vendor"/>
   <project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="caf-vendor">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/ipacm_vendor_product.mk" src="ipacm_vendor_product.mk"/>
   </project>
-  <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices" remote="caf-vendor">
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/dataservices_vendor_product.mk" src="dataservices_vendor_product.mk"/>
+  <project name="platform/vendor/qcom-opensource/data-kernel" path="vendor/qcom/opensource/data-kernel" remote="caf-vendor">
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/data_dlkm_vendor_board.mk" src="data_dlkm_vendor_board.mk"/>
   </project>
+  <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices" remote="caf-vendor"/>
   <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm" remote="caf-vendor"/>
   <project name="platform/vendor/qcom-opensource/fst-manager" path="vendor/qcom/opensource/fst-manager" remote="caf-vendor"/>
   <project name="platform/vendor/qcom-opensource/healthd-ext" path="vendor/qcom/opensource/healthd-ext" remote="caf-vendor"/>
@@ -829,17 +829,8 @@
   <project name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="vendor/qcom/opensource/wlan/qca-wifi-host-cmn" remote="caf-vendor"/>
   <project name="platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="vendor/qcom/opensource/wlan/qcacld-3.0" remote="caf-vendor"/>
   <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" remote="caf-vendor"/>
-  <project name="platform/vendor/qcom/holi" path="device/qcom/holi" remote="caf-vendor"/>
   <project name="platform/vendor/qcom/kona" path="device/qcom/kona" remote="caf-vendor"/>
-  <project name="platform/vendor/qcom/lahaina" path="device/qcom/lahaina" remote="caf-vendor"/>
-  <project name="platform/vendor/qcom/opensource/datarmnet" path="vendor/qcom/opensource/datarmnet" remote="caf-vendor">
-    <linkfile dest="vendor/qcom/defs/board-defs/vendor/datarmnet_dlkm_vendor_board.mk" src="datarmnet_dlkm_vendor_board.mk"/>
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/datarmnet_dlkm_vendor_product.mk" src="datarmnet_dlkm_vendor_product.mk"/>
-  </project>
-  <project name="platform/vendor/qcom/opensource/datarmnet-ext" path="vendor/qcom/opensource/datarmnet-ext" remote="caf-vendor">
-    <linkfile dest="vendor/qcom/defs/board-defs/vendor/datarmnet_ext_dlkm_vendor_board.mk" src="datarmnet_ext_dlkm_vendor_board.mk"/>
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/datarmnet_ext_dlkm_vendor_product.mk" src="datarmnet_ext_dlkm_vendor_product.mk"/>
-  </project>
+  <project name="platform/vendor/qcom/lito" path="device/qcom/lito" remote="caf-vendor"/>
   <project name="platform/vendor/qcom/wlan" path="device/qcom/wlan" remote="caf-vendor"/>
 
 </manifest>

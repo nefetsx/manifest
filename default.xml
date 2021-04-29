@@ -16,12 +16,13 @@
     <remote name="caf-vendor"
             fetch="https://source.codeaurora.org/quic/la"
             review="codeaurora.org"
-            revision="refs/tags/LA.UM.9.14.r1-15800-LAHAINA.0" />
+            revision="refs/tags/LA.UM.9.12.r1-11000-SMxx50.0" />
 
     <default remote="caf-system"
-             revision="refs/tags/LA.QSSI.11.0.r1-11400-qssi.0" />
+             revision="refs/tags/LA.QSSI.11.0.r1-11600-qssi.0" />
 
     <include name="codeaurora.xml" />
+    <include name="removed.xml" />
     <include name="unknown.xml" />
 
 </manifest>
